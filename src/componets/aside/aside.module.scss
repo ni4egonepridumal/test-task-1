@@ -1,0 +1,9 @@
+.item {
+  width: 152px;
+  height: 100vh;
+  background-color: var(--gray);
+  & p {
+    padding-left: 13px;
+    padding-top: 25px;
+  }
+}

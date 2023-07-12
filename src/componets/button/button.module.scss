@@ -1,0 +1,17 @@
+.item {
+  border: none;
+  border-radius: 5px;
+  padding: 7px 12px;
+  margin-top: 12px;
+  margin-left: 13px;
+  cursor: pointer;
+}
+
+.purple {
+  background-color: var(--purple);
+  color: var(--white);
+}
+.lightGray {
+  background-color: var(--button-gray);
+  color: var(--white);
+}

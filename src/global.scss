@@ -6,10 +6,16 @@
   --light-blue: #f3f3f3;
   --white: #fffffe;
   --green: #52cf4f;
+  --light-gray: #A3A3A3;
 }
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-family: "Roboto", sans-serif;
 }

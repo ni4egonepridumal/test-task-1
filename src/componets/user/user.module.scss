@@ -1,0 +1,24 @@
+.user_inner {
+  min-width: 420px;
+  height: 110px;
+  background-color: var(--light-blue);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-top: 10px;
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+.user_innerBottom {
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: var(--purple);
+    text-decoration: none;
+  }
+}
+
+.user_span {
+  color: var(--light-gray);
+}

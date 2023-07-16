@@ -1,10 +1,10 @@
-import { Aside } from "./componets/aside"
+import { Home } from "./pages/Home";
 
 
 function App() {
   return (
     <div>
-      <Aside />
+      <Home />
     </div>
   )
 }

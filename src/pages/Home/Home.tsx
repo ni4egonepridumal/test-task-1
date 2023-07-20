@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
+import MoonLoader from "react-spinners/MoonLoader";
 import { Users } from '../../componets/users';
-import styles from "./home.module.scss";
 import axios from 'axios';
 import { getUsers } from '../../redux/slices/userSlices';
 import { useAppDispatch, useAppSelector } from '../../redux/store/hooks';
 
 
 export const Home = () => {
+    const override: CSSProperties = {
+        display: "block",
+        marginLeft: "200px",
+    };
+
     const dispatch = useAppDispatch();
+
     const users = useAppSelector(state => state.users);
-    const { allUsers } = users;
-    // console.log("Эти данные приходят в первый компонент из редакса компонет HOME >>>>", allUsers)
+
+    const { allUsers, loading } = users;
+
     React.useEffect(() => {
         const apiUrl = 'https://jsonplaceholder.typicode.com/users'
         axios.get(apiUrl).then((res) => {
@@ -21,8 +28,19 @@ export const Home = () => {
     }, [dispatch]);
 
     return (
-        <div className={styles.item}>
-            <Users allUsers={allUsers} />
+        <div>
+            {loading ?
+                <MoonLoader
+                    color={"black"}
+                    loading={loading}
+                    cssOverride={override}
+                    size={50}
+                    aria-label="Loading Spinner"
+                    data-testid="loader"
+                /> :
+                <Users allUsers={allUsers} />
+            }
+
         </div>
     );
 };

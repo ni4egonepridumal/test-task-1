@@ -1,0 +1,32 @@
+.aboutUser {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 24px 0px 0px 0px;
+}
+
+.aboutUser_inner {
+  padding-left: 45px;
+  //   position: relative;
+  .head {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form {
+  width: 438px;
+  border-radius: 8px;
+  border: 1px solid var(--light-blue);
+  padding: 30px 10px;
+  margin-top: 15px;
+}
+.input {
+  width: 200px;
+}
+.comment {
+  width: 420px;
+  height: 55px;
+}
+.submit {
+  margin-top: 25px;
+}

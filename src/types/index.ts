@@ -1,6 +1,7 @@
 /* types from user */
 export interface IUsers {
   allUsers: IUser[];
+  loading?: boolean;
 }
 
 export interface IUser {
@@ -22,7 +23,7 @@ export interface Address {
   geo: Geo;
 }
 
-export interface Geo  {
+export interface Geo {
   lat: string;
   lng: string;
 }

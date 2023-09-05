@@ -13,6 +13,7 @@ export interface IUser {
   phone: string;
   website: string;
   company: Company;
+  comment?: string;
 }
 
 export interface Address {

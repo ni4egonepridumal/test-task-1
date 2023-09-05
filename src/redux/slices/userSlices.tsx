@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 import { IUser, IUsers } from "../../types"
@@ -20,9 +21,11 @@ export const users = createSlice({
             state.allUsers = state.allUsers.filter(item => item.id === action.payload)
         },
         sortNameUser: (state) => {
+            //@ts-ignore
             state.allUsers = state.allUsers.sort((a, b) => { if (a["name"] < b["name"]) return -1 });
         },
         sortCityUser: (state) => {
+            //@ts-ignore
             state.allUsers = state.allUsers.sort((a, b) => { if (a["address"].city < b["address"].city) return -1 });
         }
     },

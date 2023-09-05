@@ -43,9 +43,7 @@
     3. Вывести на карточку: 
         
         name
-        
         address.city
-        
         company.name
         
     4. Кнопка “Подробнее” должна вести на “Профиль пользователя”
@@ -56,19 +54,13 @@
     1. Вывести в профиле:
         
         name
-        
         username
-        
         email
-        
         address.street
-        
         address.city
-        
         address.zipcode
         classnames
         phone
-        
         website
         
     2. Все поля формы, кроме Comment, должны быть предзаполнены из [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)

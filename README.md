@@ -1,7 +1,18 @@
 # test-task-1
 Тестовое задание найденное на просторах интернета
 
-Задание звучало так:
+### **Стек на данное задание:**
+
+1. react
+2. redux
+3. typescript
+4. axios
+5. classnames
+6. react-router-dom
+7. react-spinners
+8. react-hook-form
+
+### **Задание звучало так::**
 
 Данные пользователей [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
 
@@ -66,13 +77,4 @@
     5. Все поля формы, кроме поля Comment, обязательны для заполнения
     6. Из данных формы при отправке нужно сформировать JSON и вывести его в консоль.
 
-### **Стек на данное задание:**
 
-1. react
-2. redux
-3. typescript
-4. axios
-5. classnames
-6. react-router-dom
-7. react-spinners
-8. react-hook-form

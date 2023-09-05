@@ -123,7 +123,7 @@ export const RHF = ({ user }: IPropsUser) => {
                                 message: "Некорректно введён город, пример: Воркута"
                             }
                         })} />
-                    {errors.city && <span>{errors.city.message}</span>}
+                    <span style={{ color: "red" }}>{errors.city && errors.city.message}</span>
                 </div>
                 <div className={styles.input}> <label>Zip code</label>
                     <input
@@ -135,7 +135,7 @@ export const RHF = ({ user }: IPropsUser) => {
                                 message: "Используйте только цифры, без доп знаков, пример: 740000"
                             }
                         })} />
-                    <span>{errors.zipCode && errors.zipCode.message}</span>
+                    <span style={{ color: "red" }}>{errors.zipCode && errors.zipCode.message}</span>
                 </div>
                 <div className={styles.input}>
                     <label>Phone</label>
